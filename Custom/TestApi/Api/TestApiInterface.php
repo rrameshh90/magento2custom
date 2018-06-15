@@ -1,5 +1,5 @@
 <?php
-namespace NuTech\TestApi\Api;
+namespace Custom\TestApi\Api;
  
 interface TestApiInterface
 {

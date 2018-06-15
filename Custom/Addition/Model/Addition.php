@@ -1,6 +1,6 @@
 <?php
-namespace NuTech\Addition\Model;
-use NuTech\Addition\Api\AdditionApiInterface;
+namespace Custom\Addition\Model;
+use Custom\Addition\Api\AdditionApiInterface;
  
 class Addition implements AdditionApiInterface
 {

@@ -1,5 +1,5 @@
 <?php
-namespace NuTech\Addition\Api;
+namespace Custom\Addition\Api;
  
 interface AdditionApiInterface
 {

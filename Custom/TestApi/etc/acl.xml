@@ -10,7 +10,7 @@
     <acl>
         <resources>
             <resource id="Magento_Backend::admin">
-                <resource id="NuTech_TestApi::hello" title="HelloApi" translate="title" sortOrder="110" />
+                <resource id="Custom_TestApi::hello" title="HelloApi" translate="title" sortOrder="110" />
             </resource>
         </resources>
     </acl>

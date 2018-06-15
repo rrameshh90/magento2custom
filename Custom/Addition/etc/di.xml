@@ -7,6 +7,6 @@
  */
  -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="NuTech\Addition\Api\AdditionApiInterface"
-                type="NuTech\Addition\Model\Addition" />
+    <preference for="Custom\Addition\Api\AdditionApiInterface"
+                type="Custom\Addition\Model\Addition" />
 </config>

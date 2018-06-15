@@ -7,6 +7,6 @@
 
 \Magento\Framework\Component\ComponentRegistrar::register(
     \Magento\Framework\Component\ComponentRegistrar::MODULE,
-    'NuTech_Addition',
+    'Custom_Addition',
     __DIR__
 );

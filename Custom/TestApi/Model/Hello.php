@@ -1,6 +1,6 @@
 <?php
-namespace NuTech\TestApi\Model;
-use NuTech\TestApi\Api\TestApiInterface;
+namespace Custom\TestApi\Model;
+use Custom\TestApi\Api\TestApiInterface;
  
 class Hello implements TestApiInterface
 {

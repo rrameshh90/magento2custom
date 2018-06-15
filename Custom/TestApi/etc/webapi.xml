@@ -8,7 +8,7 @@
  -->
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
     <route url="/V1/testapi/name/:name" method="GET">
-        <service class="NuTech\TestApi\Api\TestApiInterface" method="name"/>
+        <service class="Custom\TestApi\Api\TestApiInterface" method="name"/>
         <resources>
             <resource ref="anonymous"/>
         </resources>
