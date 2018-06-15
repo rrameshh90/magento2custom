@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   NuTech
+ * @package    NuTech_Api
+ * @copyright  Copyright (c) 2017 NU Technology Inc.
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="NuTech_TestApi::hello" title="HelloApi" translate="title" sortOrder="110" />
+            </resource>
+        </resources>
+    </acl>
+</config>
+ 

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   NuTech
+ * @package    NuTech_Api
+ * @copyright  Copyright (c) 2017 NU Technology Inc.
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="NuTech\Addition\Api\AdditionApiInterface"
+                type="NuTech\Addition\Model\Addition" />
+</config>

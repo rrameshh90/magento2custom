@@ -1,0 +1,40 @@
+<?php
+/**
+ * @category   Priceshoes
+ * @package    Priceshoes_Catalogs
+ * @copyright  Copyright (c) 2017 NU Technology Inc.
+ */
+
+$_categories = $block->getCatalogs();
+$categoryCount = count($_categories);
+?>
+<?php if($block->isEnabled()): ?>
+<?php if ($categoryCount): ?>
+	<div class="reletedproductsouterdiv">
+	<?php if ($categoryCount <= 4): ?>
+		<span class="prevnext-dummy prev-position-dummy" ></span>
+		<span class="prevnext-dummy next-position-dummy" ></span>
+	<?php endif ?>
+	<section class="catalogs slider">		
+	<?php  foreach ($_categories as $_category):?>
+		<div>
+	 	<a href="<?php echo $_category->getCatalogUrl(); ?>">
+           <img src="<?php echo $_category->getImageUrl(); ?>" />
+			<p class="slider-title">
+				<?php if(!empty($_category->getCatalogName())): ?>
+					<?php echo $_category->getCatalogName(); ?>
+				<?php else:?>
+					<?php echo $_category->getName();?>
+				<?php endif; ?>
+			</p>
+            <p class="slider-price"><?php echo $_category->getCatalogYear(); ?></p>
+            </a>
+        </div>
+	<?php endforeach;?>
+    </section>
+    </div>
+<?php endif; ?>
+<?php endif; ?>
+
+
+

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   Nu
+ * @package    Custom_ExternalImage
+ * @copyright  Copyright (c) 2017 NU Technology Inc.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="catalog" sortOrder="500">
+            <label>External Image Path</label>
+        </tab>
+        <section id="catalog" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+             <class>separator-top</class>
+            <label>Catalog</label>
+            <tab>catalog</tab>
+            <resource>Custom_ExternalImage::configuration</resource>
+            <group id="custom_externalImage" type="text" sortOrder="5" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>External Image Path Section</label>
+                <field id="external_path" translate="label" type="text" sortOrder="21" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enter External Image Path</label>
+                </field>
+              
+            </group>
+        </section>
+    </system>
+</config>
+

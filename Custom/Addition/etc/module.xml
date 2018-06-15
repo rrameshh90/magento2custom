@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * @category   Priceshoes
+ * @package    Priceshoes_Core
+ * @copyright  Copyright (c) 2017 NU Technology Inc.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="NuTech_Addition" setup_version="100.0.0" />
+</config>

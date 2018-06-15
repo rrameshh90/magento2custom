@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category   Priceshoes
+ * @package    Priceshoes_Catalogs
+ * @copyright  Copyright (c) 2017 NU Technology Inc.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="promotions" sortOrder="500">
+            <label>Custom Tabs</label>
+        </tab>
+        <section id="promotions" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+            <class>separator-top</class>
+            <label>Promotions</label>
+            <tab>promotions</tab>
+            <resource>Custom_Core::catalogs</resource>
+            <group id="custom_catalogs" type="text" sortOrder="5" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Catalogs</label>
+                <field id="enable" translate="label" type="select" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="catalogs_limit" translate="label" type="text" sortOrder="22" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Maximum No Of Products</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

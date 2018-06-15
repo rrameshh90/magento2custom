@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Custom_ContactForm::custom_contactform_grid" title="Contact Posts" module="Custom_ContactForm" sortOrder="130" action="contactpost/post/" resource="Custom_ContactForm::custom_contactform_grid" />
+   </menu>
+</config>

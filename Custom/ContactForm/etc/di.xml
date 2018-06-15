@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<preference for="\Magento\Contact\Controller\Index\Post" type="\Custom\ContactForm\Controller\Index\Post" />
+	    <!--  Admin Grid Data fetch from the Model Class -->
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="custom_contactform_grid_data_source" xsi:type="string">Custom\ContactForm\Model\ResourceModel\Contact\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Custom\ContactForm\Model\ResourceModel\Contact\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">contact_details</argument>
+            <argument name="resourceModel" xsi:type="string">Custom\ContactForm\Model\ResourceModel\Contact</argument>
+        </arguments>
+    </virtualType>
+</config>
