@@ -1,0 +1,17 @@
+<script>
+    requirejs(['jquery', 'jquery/ui', 'slick'],
+            function ($, ui, slick) {
+		$(document).ready(function () {
+			$(".catalogs").not('.slick-initialized').slick({
+			  dots: true,
+			  infinite: true,
+			  autoplaySpeed: 2000,
+			  slidesToShow: 2,
+			  slidesToScroll: 3,
+			  autoplay: true,
+			  adaptiveHeight: true
+			});
+		});
+});
+
+</script>
