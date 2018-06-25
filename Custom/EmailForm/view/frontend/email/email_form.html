@@ -1,0 +1,16 @@
+<!--
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<!--@subject {{trans "Welcome to %store_name" store_name=$store.getFrontendName()}} @-->
+<!--@vars {
+"var this.getUrl($store, 'customer/account/')":"Customer Account URL",
+"var customer.email":"Customer Email",
+"var customer.name":"Customer Name"
+} @-->
+{{template config_path="design/email/header_template"}}
+<p class="greeting">{{trans "Querido," }}  {{var emailform_name}}</p>
+<p>Gracias por presentar tu pedido. Nos pondremos en contacto con usted en breve.</p>
+{{template config_path="design/email/footer_template"}}

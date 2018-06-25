@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="custom_emailform" translate="label" type="text" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Email Form</label>
+            <tab>promotions</tab>
+            <resource>Custom_EmailForm::config</resource>
+            <group id="user" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Career Emails</label>
+                <field id="username" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Support Name</label>
+                </field>
+                    <field id="email" translate="label" type="text" sortOrder="31" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Support Email</label>
+                </field>
+                <field id="template" translate="label comment" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>User Template</label>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+                    <comment>Please select a valid email template, from transactional emails.</comment>
+                </field>
+            </group>
+        </section>
+      </system>
+</config>

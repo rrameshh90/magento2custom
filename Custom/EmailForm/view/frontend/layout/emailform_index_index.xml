@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * @category   Priceshoes
+ * @package    Priceshoes_MyAgenda
+ * @copyright  Copyright (c) 2017 NU Technology Inc.
+ */
+ -->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<update handle="customer_account"/>
+	<body>
+		<referenceBlock name="breadcrumbs">
+			<action method="addCrumb">
+				<argument name="crumbName" xsi:type="string">Home</argument>
+				<argument name="crumbInfo" xsi:type="array">
+					<item name="title" xsi:type="string">Home</item>
+					<item name="label" xsi:type="string">Home</item>
+					<item name="link" xsi:type="string">{{baseUrl}}</item>
+				</argument>
+			</action>
+			<action method="addCrumb">
+				<argument name="crumbName" xsi:type="string">EmailForm</argument>
+				<argument name="crumbInfo" xsi:type="array">
+					<item name="title" xsi:type="string">EmailForm</item>
+					<item name="label" xsi:type="string">EmailForm</item>
+				</argument>
+			</action>
+		</referenceBlock>
+		<referenceContainer name="content">
+			<block class="Custom\EmailForm\Block\Index" name="index.index"  template="Custom_EmailForm::index/index.phtml" cacheable="false" />
+		</referenceContainer>
+	</body>
+</page>
